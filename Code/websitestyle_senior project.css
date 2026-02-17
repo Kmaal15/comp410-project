@@ -907,3 +907,19 @@ textarea {
 
 /* FIX: space between hours card and director card */
 .hours-card{margin-bottom:1.75rem;}
+
+
+/* Bio fit: director card text */
+.director-card .director-body{
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+.director-card{
+  padding-bottom: 1.6rem;
+}
+
+
+/* Ensure Sherelle bio text is visible */
+.director-card .director-body{
+  color: #000000;
+}
