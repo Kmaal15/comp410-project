@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <title>Aggie Source | Volunteer View</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="websitestyle_senior project.css" />
+</head>
+<body>
+<header class="site-header">
+ <div class="container nav-container">
+ <div class="brand">
+ <div class="logo-mark">A</div>
+ <span class="brand-text">AGGIE SOURCE</span>
+ </div>
+
+ <nav class="nav-links" id="main-nav">
+ <a href="index_senior project.html">Home</a>
+ <a href="admin_senior project.html">Admin</a>
+ <a href="student_senior project.html">Students</a>
+ <a href="volunteer_senior project.html">Volunteers</a>
+ <a href="signin_senior project.html">Sign In</a>
+ </nav>
+
+ <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+ <span></span><span></span><span></span>
+ </button>
+ </div>
+</header>
+
+<main>
+ <section class="section page-hero">
+ <div class="container">
+ <h1>Volunteer View</h1>
+ <p class="page-subtitle">
+ A focused space for volunteers to check in, log hours, and see daily tasks.
+ </p>
+ </div>
+ </section>
+
+ <section class="section">
+ <div class="container two-column">
+ <article class="card wide-card">
+ <h3>Check-In &amp; Check-Out</h3>
+ <p> form for logging volunteer hours.</p>
+
+ <form class="checkin-form">
+ <div class="form-row">
+ <label>
+ Name
+ <input type="text" placeholder="First Last" />
+ </label>
+ <label>
+ Aggie Email
+ <input type="email" placeholder="aggie@example.edu" />
+ </label>
+ </div>
+
+ <div class="form-row">
+ <label>
+ Action
+ <select>
+ <option>Check in</option>
+ <option>Check out</option>
+ </select>
+ </label>
+ <label>
+ Shift
+ <select>
+ <option>Morning (10 AM – 12 PM)</option>
+ <option>Midday (12 PM – 2 PM)</option>
+ <option>Afternoon (2 PM – 4 PM)</option>
+ </select>
+ </label>
+ </div>
+
+ <div class="form-row">
+ <label>
+ Event
+ <select>
+ <option>Winter Toiletries Drive</option>
+ <option>Coat Drive</option>
+ <option>Meals for Moms Drive</option>
+ <option>Other</option>
+ </select>
+ </label>
+ </div>
+
+ <button type="button" class="btn btn-primary">Submit</button>
+ </form>
+ </article>
+
+ <aside class="card column-card">
+ <h3>Today’s Checklist</h3>
+ <ul class="checklist">
+ <li>
+ <input type="checkbox" id="task1" />
+ <label for="task1">Restock shelves and rotate older items to the front.</label>
+ </li>
+ <li>
+ <input type="checkbox" id="task2" />
+ <label for="task2">Log new donations in the system.</label>
+ </li>
+ <li>
+ <input type="checkbox" id="task3" />
+ <label for="task3">Wipe down surfaces and keep aisles clear.</label>
+ </li>
+ <li>
+ <input type="checkbox" id="task4" />
+ <label for="task4">Greet students and answer basic questions.</label>
+ </li>
+ </ul>
+ <p class="subtle-note">
+ Remember to stock thoughtfully and keep the space welcoming.
+ </p>
+ </aside>
+ </div>
+ </section>
+
+ <!-- NEW SECTION: Volunteer Hours Summary + Calendar -->
+ <section class="section section-alt">
+ <div class="container two-column">
+ <!-- Total Volunteer Hours -->
+ <article class="card column-card">
+ <h3>Total Volunteer Hours</h3>
+ <p class="subtle-note">
+ Summary of hours completed this semester. In the full system, this would update automatically based on check-ins.
+ </p>
+
+ <div class="hours-summary">
+ <p class="hours-summary-label">Total hours logged</p>
+ <p class="hours-summary-value">128.5</p>
+ <p class="hours-summary-sub">
+ Across <strong>34</strong> volunteer shifts
+ </p>
+ </div>
+
+ <ul class="status-list" style="margin-top:1rem;">
+ <li>
+ <span class="dot dot-green"></span>
+ <div>
+ <strong>Winter Toiletries Drive</strong>
+ <p>54 hours contributed</p>
+ </div>
+ </li>
+ <li>
+ <span class="dot dot-yellow"></span>
+ <div>
+ <strong>Coat Drive</strong>
+ <p>39 hours contributed</p>
+ </div>
+ </li>
+ <li>
+ <span class="dot dot-blue"></span>
+ <div>
+ <strong>Meals for Moms Drive</strong>
+ <p>35.5 hours contributed</p>
+ </div>
+ </li>
+ </ul>
+ </article>
+
+ <!-- Volunteer Calendar -->
+ <article class="card wide-card">
+ <h3>Volunteer Calendar (Sample Month)</h3>
+ <p>
+ This mock calendar shows days where students volunteered. In a live app,
+ this would be synced with check-in data.
+ </p>
+
+ <div class="calendar-wrapper">
+ <div class="calendar-header">
+ <span class="calendar-month">November 2025</span>
+ </div>
+ <table class="simple-table calendar-table">
+ <thead>
+ <tr>
+ <th>Sun</th>
+ <th>Mon</th>
+ <th>Tue</th>
+ <th>Wed</th>
+ <th>Thu</th>
+ <th>Fri</th>
+ <th>Sat</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td></td>
+ <td></td>
+ <td>1</td>
+ <td class="calendar-vol">2</td>
+ <td>3</td>
+ <td class="calendar-vol">4</td>
+ <td>5</td>
+ </tr>
+ <tr>
+ <td>6</td>
+ <td class="calendar-vol">7</td>
+ <td>8</td>
+ <td>9</td>
+ <td class="calendar-vol">10</td>
+ <td>11</td>
+ <td class="calendar-vol">12</td>
+ </tr>
+ <tr>
+ <td>13</td>
+ <td>14</td>
+ <td class="calendar-vol">15</td>
+ <td>16</td>
+ <td>17</td>
+ <td class="calendar-vol">18</td>
+ <td>19</td>
+ </tr>
+ <tr>
+ <td class="calendar-vol">20</td>
+ <td>21</td>
+ <td>22</td>
+ <td class="calendar-vol">23</td>
+ <td>24</td>
+ <td>25</td>
+ <td class="calendar-vol">26</td>
+ </tr>
+ <tr>
+ <td>27</td>
+ <td class="calendar-vol">28</td>
+ <td>29</td>
+ <td>30</td>
+ <td></td>
+ <td></td>
+ <td></td>
+ </tr>
+ </tbody>
+ </table>
+
+ <p class="subtle-note" style="margin-top:0.75rem;">
+ Highlighted dates represent days with at least one active volunteer shift.
+ </p>
+ </div>
+ </article>
+ </div>
+ </section>
+
+ <section class="section">
+ <div class="container">
+ <div id="volunteer-tools-mount"></div>
+ </div>
+ </section>
+
+</main>
+
+<footer class="site-footer">
+ <div class="container footer-grid">
+ <div>
+ <p class="footer-brand">Aggie Source • Aggie Grocer</p>
+ <p class="footer-text">
+ Designed for COMP495 as a concept. No real student data is stored here.
+ </p>
+ </div>
+ <div class="footer-links">
+ <a href="index_senior project.html">Home</a>
+ <a href="signin_senior project.html">Sign in</a>
+ </div>
+ </div>
+</footer>
+
+<script src="enhancements.js"></script>
+ <script src="websitescript_senior project.js"></script>
+</body>
+</html>

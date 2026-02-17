@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <title>Aggie Source | Sign Up</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="websitestyle_senior project.css" />
+</head>
+<body>
+<header class="site-header">
+ <div class="container nav-container">
+ <div class="brand">
+ <div class="logo-mark">A</div>
+ <span class="brand-text">AGGIE SOURCE</span>
+ </div>
+
+ <nav class="nav-links" id="main-nav">
+ <a href="index_senior project.html">Home</a>
+ <a href="signin_senior project.html">Sign In</a>
+ </nav>
+
+ <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+ <span></span><span></span><span></span>
+ </button>
+ </div>
+</header>
+
+<main>
+ <section class="section section-alt">
+ <div class="container signin-container">
+ <div class="signin-panel card signup-section">
+ <div class="signin-header">
+ <div class="logo-mark large">A</div>
+ <span class="brand-text">AGGIE SOURCE</span>
+ </div>
+
+ <h2>New to Aggie Source?</h2>
+ <p class="signin-body">
+ Create a account and choose your role. In a real system, this would create a user profile.
+ </p>
+
+ <form class="signin-form" onsubmit="return false;">
+ <label>
+ Aggie Email
+ <input id="signup-email" type="email" placeholder="aggie@example.edu" />
+ </label>
+
+ <label>
+ Create password
+ <input id="signup-password" type="password" placeholder="Create a password" />
+ </label>
+
+ <label>
+ I am a...
+ <select id="signup-role">
+ <option value="">Select your role…</option>
+ <option value="admin">Admin</option>
+ <option value="student">Student</option>
+ <option value="volunteer">Volunteer</option>
+ </select>
+ </label>
+
+ <button
+ type="button"
+ class="btn btn-primary btn-full"
+ id="signup-button"
+ >
+ Sign up
+ </button>
+ </form>
+
+ <div class="signup-inline" style="margin-top:1.2rem;">
+ <p>Already have an account?</p>
+ <a
+ class="btn btn-secondary btn-full"
+ href="signin_senior project.html"
+ >
+ Back to sign in
+ </a>
+ </div>
+		
+		 <div class="signin-views">
+ <p>Preview each view without logging in:</p>
+ <div class="signin-buttons">
+ <a class="btn btn-secondary" href="admin_senior project.html">Admin</a>
+ <a class="btn btn-secondary" href="student_senior project.html">Student</a>
+ <a class="btn btn-secondary" href="volunteer_senior project.html">Volunteer</a>
+ </div>
+ </div>
+
+ </div>
+ </div>
+ </div>
+ </section>
+</main>
+
+<footer class="site-footer">
+ <div class="container footer-grid">
+ <div>
+ <p class="footer-brand">Aggie Source • Aggie Grocer</p>
+ <p class="footer-text">
+ Designed for COMP495 as a concept. No real student data is stored here.
+ </p>
+ </div>
+ <div class="footer-links">
+ <a href="index_senior project.html">Home</a>
+ <a href="signin_senior project.html">Sign in</a>
+ </div>
+ </div>
+</footer>
+
+<script src="enhancements.js"></script>
+ <script src="websitescript_senior project.js"></script>
+</body>
+</html>

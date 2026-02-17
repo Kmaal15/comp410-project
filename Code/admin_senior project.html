@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <title>Aggie Source | Admin View</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="websitestyle_senior project.css" />
+</head>
+<body>
+<header class="site-header">
+ <div class="container nav-container">
+ <div class="brand">
+ <div class="logo-mark">A</div>
+ <span class="brand-text">AGGIE SOURCE</span>
+ </div>
+
+ <nav class="nav-links" id="main-nav">
+ <a href="index_senior project.html">Home</a>
+ <a href="admin_senior project.html">Admin</a>
+ <a href="student_senior project.html">Students</a>
+ <a href="volunteer_senior project.html">Volunteers</a>
+ <a href="signin_senior project.html">Sign In</a>
+ </nav>
+
+ <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+ <span></span><span></span><span></span>
+ </button>
+ </div>
+</header>
+
+<main>
+ <section class="section page-hero">
+ <div class="container">
+ <h1>Admin View</h1>
+ <p class="page-subtitle">
+ Tools for pantry managers to oversee inventory, donations, and operations.
+ </p>
+ <p style="margin-top:0.75rem"><a class="btn" href="donation_tracking.html">Open Donation Tracking</a></p>
+ </div>
+ </section>
+
+ <section class="section">
+ <div class="container two-column">
+ <article class="card wide-card">
+ <h3>Inventory Tracking</h3>
+ <p>
+ Snapshot of current stock levels. This page demonstrates the interface that would be
+ connected to a live database in the final system.
+ </p>
+
+ <div class="table-wrapper">
+ <table class="simple-table">
+ <thead>
+ <tr>
+ <th>Item</th>
+ <th>Category</th>
+ <th>On Hand</th>
+ <th>Low Stock?</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Canned Beans</td>
+ <td>Food</td>
+ <td>34</td>
+ <td>No</td>
+ </tr>
+ <tr>
+ <td>Rice (2 lb)</td>
+ <td>Food</td>
+ <td>12</td>
+ <td>Yes</td>
+ </tr>
+ <tr>
+ <td>Toothpaste</td>
+ <td>Toiletries</td>
+ <td>9</td>
+ <td>Yes</td>
+ </tr>
+ <tr>
+ <td>Blazers</td>
+ <td>Professional Clothing</td>
+ <td>18</td>
+ <td>No</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </article>
+
+ <aside class="card column-card">
+ <h3>Donation Tracking &amp; Requests</h3>
+ <p>High level view of upcoming donations and areas that need attention.</p>
+ <ul class="status-list">
+ <li>
+ <span class="dot dot-green"></span>
+ <div>
+ <strong>Community Food Drive</strong>
+ <p>Scheduled drop-off: Friday, 3 PM</p>
+ </div>
+ </li>
+ <li>
+ <span class="dot dot-yellow"></span>
+ <div>
+ <strong>Local Grocery Partner</strong>
+ <p>Pending confirmation</p>
+ </div>
+ </li>
+ <li>
+ <span class="dot dot-red"></span>
+ <div>
+ <strong>Winter Clothing Campaign</strong>
+ <p>Storage space at 90% capacity</p>
+ </div>
+ </li>
+ </ul>
+
+ <button class="btn btn-primary btn-full">Create New Donation Entry</button>
+
+ <div style="margin-top:1rem;font-size:0.82rem;color:var(--text-muted);">
+ In production, this button would open a form to capture donor details,
+ items, and pickup/drop-off logistics.
+ </div>
+ </aside>
+ </div>
+ </section>
+
+ <section class="section">
+ <div class="container">
+ <div id="admin-inventory-mount"></div>
+ <div id="admin-slots-mount" style="margin-top:1rem"></div>
+ <div id="admin-pickup-requests-mount" style="margin-top:1rem"></div>
+ <div id="admin-checklists-mount" style="margin-top:1rem"></div>
+ </div>
+ </section>
+
+</main>
+
+<footer class="site-footer">
+ <div class="container footer-grid">
+ <div>
+ <p class="footer-brand">Aggie Source • Aggie Grocer</p>
+ <p class="footer-text">
+ Designed for COMP495 as a concept. No real student data is stored here.
+ </p>
+ </div>
+ <div class="footer-links">
+ <a href="index.html">Home</a>
+ <a href="signin.html">Sign in</a>
+ </div>
+ </div>
+</footer>
+
+<script src="enhancements.js"></script>
+ <script src="websitescript_senior project.js"></script>
+</body>
+</html>

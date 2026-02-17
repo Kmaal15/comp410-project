@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <title>Aggie Source | Sign In</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="websitestyle_senior project.css" />
+</head>
+<body>
+<header class="site-header">
+ <div class="container nav-container">
+ <div class="brand">
+ <div class="logo-mark">A</div>
+ <span class="brand-text">AGGIE SOURCE</span>
+ </div>
+
+ <nav class="nav-links" id="main-nav">
+ <a href="index_senior project.html">Home</a>
+ <a href="signin_senior project.html">Sign In</a>
+ </nav>
+
+ <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+ <span></span><span></span><span></span>
+ </button>
+ </div>
+</header>
+
+<main>
+ <section class="section section-alt">
+ <div class="container signin-container">
+ <div class="signin-panel card">
+ <div class="signin-header">
+ <div class="logo-mark large">A</div>
+ <span class="brand-text">AGGIE SOURCE</span>
+ </div>
+ <h2>Sign in</h2>
+ <p class="signin-body">
+ sign-in experience. In the full system, this would connect to
+ campus authentication and route users to their view.
+ </p>
+
+ <!-- SIGN IN FORM -->
+ <form class="signin-form" onsubmit="return false;">
+ <label>
+ Aggie Email
+ <input id="signin-email" type="email" placeholder="aggie@example.edu" />
+ </label>
+
+ <label>
+ Password
+ <input id="signin-password" type="password" placeholder="••••••••" />
+ </label>
+
+ <label>
+ Choose your view
+ <select id="signin-view">
+ <option value="">Select a view…</option>
+ <option value="admin">Admin View</option>
+ <option value="student">Student View</option>
+ <option value="volunteer">Volunteer View</option>
+ </select>
+ </label>
+
+ <button
+ type="button"
+ class="btn btn-primary btn-full"
+ id="signin-button"
+ >
+ Sign in
+ </button>
+ </form>
+
+ <!-- INLINE SIGN UP BUTTON UNDER SIGN IN -->
+ <div class="signup-inline">
+ <p>Don’t have an account yet?</p>
+ <a
+ class="btn btn-secondary btn-full"
+ href="signup_senior project.html"
+ >
+ Sign up
+ </a>
+ </div>
+ </div>
+ </section>
+</main>
+
+<footer class="site-footer">
+ <div class="container footer-grid">
+ <div>
+ <p class="footer-brand">Aggie Source • Aggie Grocer</p>
+ <p class="footer-text">
+ Designed for COMP495 as a concept. No real student data is stored here.
+ </p>
+ </div>
+ <div class="footer-links">
+ <a href="index_senior project.html">Home</a>
+ <a href="signin_senior project.html">Sign in</a>
+ </div>
+ </div>
+</footer>
+
+<script src="enhancements.js"></script>
+ <script src="websitescript_senior project.js"></script>
+</body>
+</html>

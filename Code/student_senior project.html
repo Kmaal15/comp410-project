@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <title>Aggie Source | Student View</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="websitestyle_senior project.css" />
+</head>
+<body>
+<header class="site-header">
+ <div class="container nav-container">
+ <div class="brand">
+ <div class="logo-mark">A</div>
+ <span class="brand-text">AGGIE SOURCE</span>
+ </div>
+
+	<nav class="nav-links" id="main-nav">
+ <a href="index_senior project.html">Home</a>
+ <a href="admin_senior project.html">Admin</a>
+ <a href="student_senior project.html">Students</a>
+ <a href="volunteer_senior project.html">Volunteers</a>
+ <a href="signin_senior project.html">Sign In</a>
+ </nav>
+
+ <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+ <span></span><span></span><span></span>
+ </button>
+ </div>
+</header>
+
+<main>
+ <section class="section page-hero">
+ <div class="container">
+ <h1>Student View</h1>
+ <p class="page-subtitle">
+ A simple way for students to see what’s available and schedule a pickup.
+ </p>
+ </div>
+ </section>
+
+ <section class="section section-alt">
+ <div class="container two-column">
+ <article class="card column-card">
+ <h3>Inventory Transparency</h3>
+ <p>Quick overview of what’s currently available at Aggie Source.</p>
+ <ul class="pill-list">
+ <li>
+ <span class="pill-label">Fresh produce</span>
+ <span class="pill-status available">Available</span>
+ </li>
+ <li>
+ <span class="pill-label">Shelf-stable meals</span>
+ <span class="pill-status limited">Limited</span>
+ </li>
+ <li>
+ <span class="pill-label">Toiletries</span>
+ <span class="pill-status available">Available</span>
+ </li>
+ <li>
+ <span class="pill-label">Professional clothing</span>
+ <span class="pill-status low">Low</span>
+ </li>
+ </ul>
+
+ <p style="margin-top:0.9rem;font-size:0.82rem;color:var(--text-muted);">
+ In the full build, this status would update in real time based on inventory records.
+ </p>
+ </article>
+
+ <article class="card wide-card">
+ <h3>Schedule a Pickup</h3>
+ <p>Students can choose a time window that works for them.</p>
+ <form class="pickup-form">
+ <div class="form-row">
+ <label>
+ Date
+ <input type="date" />
+ </label>
+ <label>
+ Time window
+ <select>
+ <option>10:00 AM – 11:00 AM</option>
+ <option>11:00 AM – 12:00 PM</option>
+ <option>12:00 PM – 1:00 PM</option>
+ <option>1:00 PM – 2:00 PM</option>
+ </select>
+ </label>
+ </div>
+
+ <label>
+ Items you are hoping to pick up (optional)
+ <textarea rows="3" placeholder="Example: rice, canned vegetables, interview blazer size M"></textarea>
+ </label>
+
+ <button type="button" class="btn btn-primary">Reserve Pickup Slot</button>
+ </form>
+ </article>
+ </div>
+ </section>
+
+ <section class="section">
+ <div class="container">
+ <div id="student-inventory-mount"></div>
+ <div id="student-pickup-mount" style="margin-top:1rem"></div>
+ <div class="card" style="margin-top:1rem">
+ <h3>Aggie Source Hours</h3>
+ <p class="muted">Tip: keep these hours here so students don’t have to return to the home page.</p>
+ <ul class="checklist">
+ <li><strong>Mon–Fri:</strong> 10:00 AM – 4:00 PM</li>
+ <li><strong>Sat:</strong> 11:00 AM – 2:00 PM</li>
+ <li><strong>Sun:</strong> Closed</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+</main>
+
+<footer class="site-footer">
+ <div class="container footer-grid">
+ <div>
+ <p class="footer-brand">Aggie Source • Aggie Grocer</p>
+ <p class="footer-text">
+ Designed for COMP495 as a concept. No real student data is stored here.
+ </p>
+ </div>
+ <div class="footer-links">
+ <a href="index.html">Home</a>
+ <a href="signin.html">Sign in</a>
+ </div>
+ </div>
+</footer>
+
+<script src="enhancements.js"></script>
+ <script src="websitescript_senior project.js"></script>
+</body>
+</html>
